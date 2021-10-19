@@ -1,0 +1,28 @@
+{
+    "name": "ovimughal/lamirator",
+    "description": "",
+    "license": "MIT",
+    "type": "tool",
+    "keywords": [
+        "Laminas Module",
+        "Lamirest Module",
+        "Module Scaffolding"
+    ],
+    "homepage": "https://github.com/ovimughal/lamirator",
+    "authors": [
+        {
+            "name": "Owais Mughal",
+            "email": "ovi.mughal@gmail.com"
+        }
+    ],
+    "bin": ["lamirator"],
+    "require": {
+        "php": "^7.3",
+        "symfony/console": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Commands\\": "src/Commands"
+        }
+    }
+}
