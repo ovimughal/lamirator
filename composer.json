@@ -1,6 +1,6 @@
 {
     "name": "ovimughal/lamirator",
-    "description": "",
+    "description": "Tool to configure your laminas app for Lamirest package & easily create modules",
     "license": "MIT",
     "type": "tool",
     "keywords": [
@@ -17,8 +17,8 @@
     ],
     "bin": ["lamirator"],
     "require": {
-        "php": "^7.3",
-        "symfony/console": "^5.2"
+        "php": "^8.1",
+        "symfony/console": "^6.2.5"
     },
     "autoload": {
         "psr-4": {

@@ -19,7 +19,8 @@ use Symfony\Component\Console\Formatter\OutputFormatterStyle;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class LamirestServeCommand extends Command {
+class LamirestServeCommand extends Command
+{
 
     protected $modulePrefix = 'Oapi';
 
@@ -32,11 +33,13 @@ class LamirestServeCommand extends Command {
      *
      * @access protected
      */
-    protected function configure() {
+    protected function configure()
+    {
         $this->setName('lamirest:serve');
         $this->setDescription('Serves Lamirest Module automatically.It is a one time thing.');
 
-        $this->setHelp(<<<EOT
+        $this->setHelp(
+            <<<EOT
 Serves Lamirest Module
 EOT
         );
@@ -55,7 +58,8 @@ EOT
      * @return numeric value
      * @access protected
      */
-    protected function execute(InputInterface $input, OutputInterface $output) {
+    protected function execute(InputInterface $input, OutputInterface $output)
+    {
         $moduleName = 'Lamirest';
         $path = shell_exec("pwd | tr -d '\n'");
 
@@ -88,13 +92,24 @@ EOT
      * @return array
      * @access protected
      */
-    protected function serve($path, $msg) {
+    protected function serve($path, $msg)
+    {
         $err = false;
 
         if (is_dir($path . '/config/autoload')) {
             shell_exec(
-                    'cd vendor/ovimughal/lamirator/dist;'
+                'cd vendor/ovimughal/lamirator/dist/config/autoload;'
                     . 'cp -R * ' . $path . '/config/autoload;'
+            );
+
+            shell_exec(
+                'cd vendor/ovimughal/lamirator/dist/root;'
+                    . 'cp -R * ' . $path . ';'
+            );
+
+            shell_exec(
+                'cd vendor/ovimughal/lamirator/dist/public;'
+                    . 'cp -R * ' . $path . '/public;'
             );
         } else {
             $err = true;
@@ -116,7 +131,8 @@ EOT
      *
      * @access protected
      */
-    protected function loadModule($moduleConfigFile, $modName) {
+    protected function loadModule($moduleConfigFile, $modName)
+    {
         $err = false;
         $moduleName = ucfirst(strtolower($modName));
 
@@ -149,7 +165,8 @@ EOT
      *
      * @access protected
      */
-    protected function displayResponse(OutputInterface $output, $err, $msg) {
+    protected function displayResponse(OutputInterface $output, $err, $msg)
+    {
         $color = 'green';
         if ($err) {
             $color = 'red';
@@ -158,8 +175,7 @@ EOT
         $output->getFormatter()->setStyle('header', $header_style);
 
         $output->writeln(sprintf(
-                        '<header>' . $msg . '</header>'
+            '<header>' . $msg . '</header>'
         ));
     }
-
 }
