@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * This is a simple Command file containing methods to serve oapiconfg module automatically
+ * This is a simple Command file containing methods to serve lamirest module automatically
  * without any manual configuration
  */
 

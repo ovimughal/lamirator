@@ -1,9 +1,9 @@
-# Zend Framework Skeleton Module
+# Lamiest oRest Skeleton Module
 
 This is a sample skeleton module for use with
-[zend-mvc](https://docs.zendframework.com/zend-mvc) applications.
+[laminas-mvc](https://docs.laminas.dev/mvc/) applications having [lamirest](https://github.com/ovimughal/lamirest) module enabled .
 
-## Installation
+<!-- ## Installation
 
 First, decide on a namespace for your new module. For purposes of this README,
 we will use `MyNewModule`.
@@ -83,4 +83,4 @@ return [
 >     /* ... */
 >     'MyNewModule',
 > ],
-> ```
+> ``` -->
