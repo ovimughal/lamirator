@@ -41,17 +41,17 @@ php lamirator.php create:module -m <Your-Module-Name>
    2. `-t <Type>` (Type is either `zf3` or `oapi` or `oRest`, default is `zf3`, any other type other than `oapi` or `oRest`  will consider `zf3`)
    # Note
    `zf3` is default Laminas Module, since no mechanism is provided to auto generate this module as was available in ZF2 Eclipse PDT or Zend Studio, I kept option here.<br>
-   `oapi` is ZF3's `AbrstractRestfulController` based module where we can handle REST easily.<br>
-   `oRest` is awesome ZF3's `AbstractActionController` based module. An easey to use and your loved `Action` based approach.<br>
-   By having `Lamirest` module installed you will get `Token` based mechanism, `AccessControlList(ACL)`, `Doctrine`, `ExceptionHandling`, `ApiValidation` & much more out of the box.
+   `oapi` is Laminas's `AbrstractRestfulController` based module where we can handle REST easily.<br>
+   `oRest` is awesome Laminas's `AbstractActionController` based module. An easey to use and your loved `Action` based approach.<br>
+   By having `Lamirest` module installed you will get `JWT-Token`, `AccessControlList(ACL)`, `Doctrine`, `ExceptionHandling`, `ApiValidation`, `Multi-tenant SAAS`, `Encryption`, `Clean Architecture` & much more out of the box.
    
-5. Test in your browser `http://hostname:port/yourapp/yourmodule` no configuration needed.
-6. Enjoy :)
+1. Test in your browser `http://hostname:port/yourapp/yourmodule` no configuration needed.
+2. Enjoy :)
 
 # For `Lamirest` Module users
 1. For installation <a href='https://github.com/ovimughal/lamirest'>Lamirest</a>
 2. Once you are up with installation, from your root directory type in following command in terminal<br>
-    `zf3-module.php oapi:serve` (zf3-module.php is the file we created above in step 1)<br>
+    `./vendor/bin/lamirator oapi:serve` <br>
    This will serve Lamirest module & do all the necessary configurations automatically<br>
    Also some config files will be generated for you.
 3. For `doctrine` to work properly we need to tell it the location of Entities<br>
@@ -73,4 +73,4 @@ php lamirator.php create:module -m <Your-Module-Name>
 ],
 ```
 
-4. You are Done :)
+1. You are Done :)
