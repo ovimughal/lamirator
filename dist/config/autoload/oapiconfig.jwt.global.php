@@ -29,6 +29,10 @@ return [
         // is from SSO/Identity Provider 
         'sso_routes' => [
             'sso'
+        ],
+        // Routes which are completely open, no API key, no token, no ACL
+        'open_public_routes' => [
+            'application',
         ]
     ]
 ];
