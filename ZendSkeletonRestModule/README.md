@@ -1,4 +1,4 @@
-# Lamiest oRest Skeleton Module
+# Lamirest oRest Skeleton Module
 
 This is a sample skeleton module for use with
 [laminas-mvc](https://docs.laminas.dev/mvc/) applications having [lamirest](https://github.com/ovimughal/lamirest) module enabled .

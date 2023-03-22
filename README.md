@@ -51,7 +51,7 @@ php lamirator.php create:module -m <Your-Module-Name>
 # For `Lamirest` Module users
 1. For installation <a href='https://github.com/ovimughal/lamirest'>Lamirest</a>
 2. Once you are up with installation, from your root directory type in following command in terminal<br>
-    `./vendor/bin/lamirator oapi:serve` <br>
+    `./vendor/bin/lamirator lamirest:serve` <br>
    This will serve Lamirest module & do all the necessary configurations automatically<br>
    Also some config files will be generated for you.
 3. For `doctrine` to work properly we need to tell it the location of Entities<br>
