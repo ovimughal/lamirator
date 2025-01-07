@@ -15,7 +15,8 @@ return [
             'reporting_templates_img_output' => 'public/reporting/templates_img_output',
             'output_file_name' => 'report',
             'reporting_file_download_route' =>  getenv('API_URL').'/download/reporting_output',
-            'reporting_file_img_download_route' =>  getenv('API_URL').'/download/reporting_templates_img_output'
+            'reporting_file_img_download_route' =>  getenv('API_URL').'/download/reporting_templates_img_output',
+            'pdf_template_source' => 'public/reporting/input' // This one is for taking pdf input & write on top of it
         ]
     ]
 ];

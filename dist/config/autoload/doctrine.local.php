@@ -26,10 +26,10 @@ return [
 //         'connection' => [
 //             'orm_default' => [
 //                 'params' => [
-//                     'host'     => '192.168.100.17',                    
+//                     'host'     => '127.0.0.1',                    
 //                     'user'     => 'postgres',
-//                     'password' => 'ERPOpulent',
-//                     'dbname'   => 'opulent_catalog',//'opulent-dev',
+//                     'password' => 'password',
+//                     'dbname'   => 'MyDB',//'opulent-dev',
 //                     'port' => 5432,
 //                     'driverOptions' => Array(
 //                         'CharacterSet' => 'UTF-8'
